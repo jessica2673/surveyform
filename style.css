@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(241, 241, 241, 0.87);
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#side {
+    height: 100vh;
+}
+
+#logo {
+    position: absolute;
+    top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: whitesmoke;
+}
+
+#icon {
+    height: 17vh;
+    background-color: transparent;
+}
+
+#logo h1 {
+    font-family: 'Norse Bold';
+    background-color: transparent;
+    font-size: 90px;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0px;
+    font-size: 14px;
+    font-weight: 10;
+    left:6vw;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+#copyright > a {
+    background-color: transparent;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.container {
+    padding-top: 17vh;
+    padding-bottom: 10vh;
+    margin-right: 8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh
+}
+
+p {
+    font-weight: 700;
+}
+
+.back {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 lightgray;
+    min-width: fit-content;
+    max-width:70vw;
+    max-height: 40vh;
+    background-clip: border-box;
+}
+
+h3{
+    padding: 30px 50px 10px 50px;
+}
+
+form{
+    display: block;
+    box-shadow: inset #000000c5;
+    margin: 0;
+    column-count: 2;
+    column-gap: 0px;
+    column-width: 20px;
+    row-gap: 50px;
+    padding: 10px 70px 30px 50px;
+}
+
+input, label, legend {
+    display: block;
+}
+
+legend {
+    margin: 10px;
+}
+
+input {
+    border-width: 1px; 
+    border-color: rgb(32, 27, 27);
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-color: lightblue;
+    border-width: 1px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+label {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.question {
+    margin-bottom: 5px;
+}
+
+.container a { 
+    color: #596D48;
+    text-decoration: none;
+}
+
+#create {
+    width: fit-content;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    border: none;
+    color: aliceblue;
+    background-color: #596D48;
+    box-shadow: 0 4px 8px 0 lightgray;
+}
+
+#create:hover {
+    background-color: #47573a;
+}
+
+#returningCustomer {
+    font-weight: 300;
+}

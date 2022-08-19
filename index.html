@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts2u.com/norse-bold.font" Norse Bold>
+    <title>Form Template</title>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="leaf.avif" id="side">
+
+        <div id="logo">
+            <img src="odin-logo.png" id="icon">
+            <h1>ODIN</h1>
+        </div>
+
+        <p id="copyright">Photo by Halie West on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
+    </div>
+
+    <div class="container">
+        <p>This is a template for a form which includes a first name, last name, email, phone number, password, and confirm password field.</p>
+
+        <p>Feel free to test out the features!</p>
+
+        <div class="back">
+            <h3>Let's do this!</h3>
+
+            <form action="scrips.js" method="GET" id="form">
+
+                <div class="question">
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" name="first_name" placeholder="Jess" required>
+                </div>
+
+                <div class="question">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="4165555555" required>
+                </div>
+
+                <div class="question">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Hello" required>
+                </div>
+
+                <div class="question">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="last_name" placeholder="Smith" title="The passwords must match!" required>
+                </div>
+
+                <div class="question">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="abc@mail.com" required>
+                </div>
+
+                <div class="question">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Hello" required>
+                </div>
+            </form>
+        </div>
+
+        <button type="submit" form="form" id="create" value="create">Create Acccount</button>
+
+        <p id="returningCustomer">Already have an account? <a href="">Log in</a></p>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
